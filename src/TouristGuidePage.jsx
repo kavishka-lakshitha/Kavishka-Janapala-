@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom'; // ✅ for navigate(-1)
 import { FaArrowLeft } from 'react-icons/fa';   // ✅ for back arrow icon
 import './TouristGuidePage.css';
 import project1Image from './image/salon1.png';
-import successVideo from "./video/succses.mp4.mp4";
+
 
 const TouristGuidePage = () => {
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ const TouristGuidePage = () => {
 
 <div className="video-section">
   <video className="hela-video" controls width="600">
-    <source src={successVideo} type="video/mp4" />
+ 
     Your browser does not support the video tag.
   </video>
 </div>

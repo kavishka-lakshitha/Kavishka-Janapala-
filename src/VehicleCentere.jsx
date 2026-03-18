@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
 import './VehicleCentere.css'; // Your custom styles
 import project1Image from './image/project1.jpg';
-import kurudu from "./video/kurudu.mp4";
+
 
 const BreLorel = () => {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const BreLorel = () => {
       {/* Video Section */}
       <div className="video-section">
         <video className="hela-video" controls>
-          <source src={kurudu} type="video/mp4" />
+          
           Your browser does not support the video tag.
         </video>
       </div>
