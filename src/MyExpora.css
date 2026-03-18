@@ -1,0 +1,655 @@
+.category-section-new {
+  background-color: #281b1c;
+  padding: 16px 24px;
+  margin-top: 90px;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: white;
+  flex-wrap: wrap; /* Mobile friendly */
+  font-family: 'Montserrat', sans-serif;  /* Apply Montserrat font here */
+}
+
+/* Page wrapper: ensure MyExpora page background is pure white */
+.expora-wrapper {
+  background-color: #ffffff; /* pure white */
+  color: #000; /* ensure readable text on white */
+  min-height: 100vh;
+}
+
+.category-item {
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 6px;
+  transition: all 0.3s ease;
+  color: white;
+}
+/* Top-left back button */
+.top-back-button {
+ 
+  top: 9px;       /* distance from top */
+  left: 16px;     /* distance from left */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  z-index: 50;
+  transition: all 0.3s ease;
+}
+
+.top-back-button1:hover {
+  
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Back icon inside the button */
+.back-icon1{
+  margin-right: 8px; /* space between icon and text */
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .top-back-button1 {
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+
+  .back-icon1 {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}
+.category-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffcc00;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  color: #ffcc00;
+}
+
+.category-item:hover::after {
+  transform: scaleX(1);
+}
+
+.separator {
+  color: #aaa;
+  font-weight: 300;
+}
+
+  
+  .category-item {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding-bottom: 6px;
+    transition: all 0.3s ease;
+    color: white;
+  }
+  
+  .category-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ffcc00;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+ 
+  
+  .category-item:hover {
+    color: #ffcc00;
+  }
+  
+  .category-item:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .separator {
+    color: #aaa;
+    font-weight: 300;
+  }
+  .about-me-section {
+    margin-top: 60px;
+    display: flex;
+  
+    gap: 60px;
+    max-width: 900pt;
+    margin-left: 2%;
+    margin-right: auto;
+    
+  }
+  
+  
+  .about-image-container {
+    flex-shrink: 0;
+  }
+  
+  .about-image {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 0px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .about-description {
+    flex: 8;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;  /* Apply Montserrat font here */
+    max-width: calc(100% - 170px); /* optional: leave some gap */
+    text-align: justify;
+  }
+ 
+ 
+ 
+  
+  .section-divider {
+    height: 2px;
+    background-color: #8e8e8e;
+    border-radius: 1px;
+    width: 100%;
+    margin-top: 5%;
+  }
+  
+  .section-divider-icon {
+    position: absolute;
+    top: 78%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; /* Match your page background */
+    padding: 0 12px;
+    font-size: 22px;
+    margin-top: 5.1%;
+   
+    font-weight: bold;
+  }
+  .edu-list {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .section-divider {
+    height: 2px;
+    background-color: #2f2e2e;
+    border-radius: 1px;
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+  }
+  
+  .section-divider-icon {
+    position: absolute;
+    top: 73%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0 12px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .about-image2{
+    width: 450px;
+    height: 250px;
+    margin-left: 125pt;
+    margin-top: 30%;
+   
+  }
+  .about-description2 {
+    font-size: 28px;
+    font-family: Montserrat;
+    text-align: center;
+    
+   
+    margin-left: 363px;
+    
+  }
+  .education-section {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .edu-title {
+    display: inline-block;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #222;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+    margin-bottom: 20px;
+  }
+  
+  .education-image {
+    width: 100%; /* full width of container */
+    height: 50%;
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  .section-titlell{
+    display: inline-block;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+    color: #222;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+    margin-bottom: 20px;
+  }
+ /* Education Section */
+.education-section {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.edu-title {
+  display: inline-block;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+    color: #222;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+    margin-bottom: 20px;
+}
+
+
+
+.edu-decorated-heading,
+.edu-tease-line {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #434546;
+  letter-spacing: 0.5px;
+  margin-top: 4%;
+}
+
+/* List of subjects and activities */
+.edu-list {
+  font-family: 'IBM Plex Mono', monospace;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+/* Animation styles for MyExpora images */
+
+/* Profile image animations */
+.animated-image {
+  animation: fadeInUp 1s ease-out;
+}
+
+.about-image {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.about-image:hover {
+  transform: scale(1.05) rotate(1deg);
+
+  filter: brightness(1.1);
+}
+
+/* Education image animations */
+.animated-education-image {
+  animation: slideInFromRight 1.5s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.education-image-container {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+}
+
+.education-image {
+  transition: all 0.4s ease;
+  transform-origin: center;
+}
+
+.education-image:hover {
+  transform: scale(1.08) translateY(-5px);
+  filter: brightness(1.15) contrast(1.1);
+}
+
+.education-image-container:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation styles for MyExpora images */
+
+/* Profile image animations */
+.animated-image {
+  animation: fadeInUp 1s ease-out;
+}
+
+.about-image {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.about-image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}
+
+/* Education image animations */
+.animated-education-image {
+  animation: slideInFromRight 1.2s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.education-image-container {
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+}
+
+.education-image {
+  transition: all 0.4s ease;
+  transform-origin: center;
+}
+
+.education-image:hover {
+  transform: scale(1.08) translateY(-5px);
+  filter: brightness(1.15) contrast(1.1);
+}
+
+.education-image-container:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Additional subtle animations for the entire sections */
+.about-me-section {
+  animation: fadeInLeft 1s ease-out 0.2s both;
+}
+
+.education-section {
+  animation: fadeInRight 1s ease-out 0.7s both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Floating animation for profile image (optional, more subtle) */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Uncomment below if you want a continuous floating effect on the profile image */
+/*
+.about-image {
+  animation: float 3s ease-in-out infinite;
+}
+*/
+
+/* Responsive adjustments for animations */
+@media (prefers-reduced-motion: reduce) {
+  .animated-image,
+  .animated-education-image,
+  .about-me-section,
+  .education-section {
+    animation: none;
+  }
+  
+  .about-image:hover,
+  .education-image:hover {
+    transform: none;
+  }
+}
+
+/* Additional subtle animations for the entire sections */
+.about-me-section {
+  animation: fadeInLeft 1s ease-out 0.2s both;
+}
+
+.education-section {
+  animation: fadeInRight 1s ease-out 0.7s both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Floating animation for profile image (optional, more subtle) */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@media (max-width: 1024px) {
+  .about-me-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .about-description {
+    max-width: 90%;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .about-image2 {
+    width: 350px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .about-description2 {
+    margin-left: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .edu-decorated-heading,
+.edu-tease-line {
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .edu-list {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+   .section-divider-icon {
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+  .category-section-new {
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+    text-align: justify;
+  }
+
+  .category-item {
+    font-size: 14px;
+  }
+
+  .about-image {
+    width: 380px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+
+  .education-image {
+    height: 190px;
+    width: 450px;
+  }
+}
+
+/* Back button used across pages */
+.top-back-button {
+  position: absolute;
+  top: 5px; /* moved higher */
+  left: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  background: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  z-index: 50;
+}
+
+.back-icon {
+  margin-right: 8px;
+ 
+
+@media (max-width: 480px) {
+  .top-back-button {
+    top: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+  
+}

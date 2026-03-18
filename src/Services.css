@@ -1,0 +1,409 @@
+.Service-header {
+    border: 2px solid #333;
+    display: inline-block;
+    padding: 15px 40px;
+    background: #fff;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-top: 35pt;
+}
+
+.Service-header:hover {
+    background: #333;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.services-description {
+    max-width: 600px;
+    margin: 20px auto 50px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    font-weight: 950px;
+   
+}
+
+.timeline {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: relative; /* needed for ::before absolute positioning */
+}
+
+/* Center vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1.5px; /* thickness of the line */
+    background-color: #1c1b1b;
+    transform: translateX(-50%);
+    z-index: 0; /* behind the boxes */
+    height: 550py;
+}
+
+.timeline-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures equal height for both boxes */
+    gap: 20px;
+}
+.timeline-image {
+    border: none;
+}
+.timeline-text,
+.timeline-image {
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 180px; /* Force equal height */
+    box-sizing: border-box;
+    position: relative; /* for pseudo element positioning */
+}
+
+.timeline-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-text p {
+    font-size: 14px;
+    color: #333;
+}
+
+.timeline-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Horizontal line connecting left timeline-text to center vertical line */
+.timeline-text.left::after {
+    content: "";
+    position: absolute;
+    top: 50%;          /* vertically centered */
+    right: -112px;      /* length of horizontal line */
+    width: 112px;
+    height: 1px;
+    background-color: #1c1b1b;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+/* Horizontal line connecting right timeline-text to center vertical line */
+.timeline-text.right::after {
+    content: "";
+    position: absolute;
+    top: 50%;          /* vertically centered */
+    left: -112px;      /* length of horizontal line */
+    width: 112px;
+    height: 1px;
+    background-color: #1c1b1b;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+/* Fade-in animation */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation when visible */
+  .timeline-row.animate {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 1;
+  }
+  
+  .timeline-row {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease;
+  }
+  /* Main Section */
+.services-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.Service-header {
+  border: 2px solid #333;
+  display: inline-block;
+  padding: 15px 40px;
+  background: #fff;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 35pt;
+}
+
+.Service-header:hover {
+  background: #333;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services-description {
+  max-width: 600px;
+  margin: 20px auto 50px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Timeline Layout */
+.timeline {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1.5px;
+  background-color: #1c1b1b;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Timeline Rows */
+.timeline-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.timeline-row.animate {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 1;
+}
+
+.timeline-text,
+.timeline-image {
+  width: 45%;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 180px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.timeline-text h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-text p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Horizontal connecting lines */
+.timeline-text.left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -113px;
+  width: 112px;
+  height: 1px;
+  background-color: #1c1b1b;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.timeline-text.right::after {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: -112px;
+  width: 112px;
+  height: 1px;
+  background-color: #1c1b1b;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Fade animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== Responsive Styling ========== */
+/* ========== Large Screens (1440px and up) ========== */
+@media (min-width: 1440px) {
+  .services-section {
+    padding: 100px 80px;
+  }
+
+  .Service-header {
+    font-size: 18px;
+    padding: 20px 50px;
+  }
+
+  .services-description {
+    font-size: 18px;
+    max-width: 800px;
+  }
+
+  .timeline {
+    width: 80%;
+    gap: 80px;
+  }
+
+  .timeline-text,
+  .timeline-image {
+    width: 42%;
+    padding: 30px;
+    min-height: 220px;
+  }
+
+  .timeline-text h3 {
+    font-size: 20px;
+  }
+
+  .timeline-text p {
+    font-size: 16px;
+  }
+
+  .timeline-text.left::after{
+    width: 163px;
+     left: 430px;
+  }
+  
+  .timeline-text.right::after {
+    width: 165px;
+    right: -165px;
+    left: -165px;
+  }
+
+  .timeline-image img {
+    border-radius: 1px;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .timeline-row {
+    flex-direction: column;
+   
+    
+  }
+
+  .timeline-text,
+  .timeline-image {
+    width: 100%;
+  }
+
+  /* Remove center vertical line on small screens */
+  .timeline::before {
+    display: none;
+  }
+
+  /* Hide horizontal connectors */
+  .timeline-text.left::after,
+    
+    
+  .timeline-text.right::after {
+    display: none;
+    
+  }
+
+  .timeline-text h3 {
+    font-size: 16px;
+  }
+
+  .timeline-text p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Service-header {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+
+  .services-description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .timeline-text,
+  .timeline-image {
+    padding: 15px;
+  }
+
+  .timeline-text h3 {
+    font-size: 15px;
+  }
+
+  .timeline-text p {
+    font-size: 12px;
+  }
+}

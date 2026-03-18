@@ -1,0 +1,465 @@
+.project-overview-container {
+  padding: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-heading {
+  margin-top: 5%;
+  gap: 50px;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.part1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 15%;
+  text-align: center;
+}
+
+.part2 {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #271909;
+  margin-bottom: 20px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* ==========================================
+   UNIVERSAL RESPONSIVE VIDEO SYSTEM
+   ========================================== */
+
+.video-section {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+/* Main video - Universal responsive */
+.hela-video {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: clamp(250px, 50vh, 600px); /* Dynamic height based on viewport */
+  object-fit: cover;
+  border-radius: clamp(4px, 1vw, 12px);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Secondary video - Universal responsive */
+.hela-video2 {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: clamp(150px, 35vh, 400px);
+  object-fit: cover;
+  border-radius: clamp(4px, 1vw, 12px);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Alternative: Aspect Ratio Container Method */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-radius: clamp(4px, 1vw, 12px);
+  margin: 0 auto;
+}
+
+.video-wrapper .hela-video,
+.video-wrapper .hela-video2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.intro-text {
+  max-width: 900px;
+  margin: 8px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2b2a2a;
+  text-align: justify;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.slide-in {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.slide-in.from-left {
+  transform: translateX(-100px);
+}
+
+.slide-in.from-right {
+  transform: translateX(100px);
+}
+
+.slide-in.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.main-heading1 {
+  text-align: left;
+  margin-top: 5%;
+}
+
+.topic2 {
+  font-size: 200%;
+  margin-top: 50%;
+}
+
+.thanks-heading {
+  text-align: center;
+  margin: 3% auto;
+  width: fit-content;
+}
+
+.thanks1 {
+  font-size: 32px;
+  margin-top: 20%;
+}
+
+.thanks2 {
+  font-size: 16px;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+  margin-top: 5%;
+}
+
+.images-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.5s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: scale(1.05);
+  animation: fadeInZoom 2s forwards;
+}
+
+.images-container img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInZoom {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.top-back-button1 {
+  position: absolute;
+  top: 65px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+}
+
+.back-icon1 {
+  margin-right: 2px;
+}
+
+/* ==========================================
+   RESPONSIVE BREAKPOINTS
+   ========================================== */
+
+/* Extra Small Phones (up to 374px) */
+@media screen and (max-width: 374px) {
+  .project-overview-container {
+    padding: 15px;
+  }
+
+  .part1 {
+    font-size: 1.5rem;
+    margin-top: 20%;
+  }
+
+  .part2 {
+    font-size: 0.9rem;
+    margin-top: 8%;
+  }
+
+  .hela-video {
+    height: clamp(140px, 35vh, 200px);
+    border-radius: 4px;
+  }
+
+  .hela-video2 {
+    height: clamp(100px, 25vh, 150px);
+    border-radius: 4px;
+  }
+
+  .intro-text {
+    font-size: 0.85rem;
+    padding: 0;
+  }
+
+  .topic2 {
+    font-size: 120%;
+    margin-top: 25%;
+  }
+
+  .thanks1 {
+    font-size: 18px;
+  }
+
+  .thanks2 {
+    font-size: 12px;
+  }
+
+  .top-back-button1 {
+    position: fixed;
+    top: 30px;
+    left: -5px;
+    font-size: 9px;
+    padding: 4px 8px;
+    border-radius: 2px;
+  }
+
+  .back-icon1 {
+    margin-right: 4px;
+    font-size: 9px;
+  }
+}
+
+/* Small Phones (375px to 480px) */
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .project-overview-container {
+    padding: 15px;
+  }
+
+  .part1 {
+    font-size: 1.6rem;
+    margin-top: 18%;
+  }
+
+  .part2 {
+    font-size: 0.95rem;
+  }
+
+  .hela-video {
+    height: clamp(160px, 40vh, 220px);
+    border-radius: 6px;
+  }
+
+  .hela-video2 {
+    height: clamp(120px, 30vh, 170px);
+    border-radius: 6px;
+  }
+
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .topic2 {
+    font-size: 130%;
+    margin-top: 20%;
+  }
+
+  .thanks1 {
+    font-size: 20px;
+  }
+
+  .thanks2 {
+    font-size: 13px;
+  }
+}
+
+/* Large Phones (481px to 767px) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .project-overview-container {
+    padding: 20px;
+  }
+
+  .part1 {
+    font-size: 1.8rem;
+    margin-top: 20%;
+  }
+
+  .part2 {
+    font-size: 1rem;
+    margin-top: 8%;
+  }
+
+  .hela-video {
+    height: clamp(200px, 45vh, 280px);
+    border-radius: 8px;
+  }
+
+  .hela-video2 {
+    height: clamp(150px, 35vh, 200px);
+    border-radius: 8px;
+  }
+
+  .intro-text {
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .main-heading,
+  .main-heading1 {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  .topic2 {
+    font-size: 150%;
+    margin-top: 30%;
+    text-align: center;
+  }
+
+  .thanks1 {
+    font-size: 24px;
+    margin-top: 10%;
+  }
+
+  .thanks2 {
+    font-size: 14px;
+  }
+
+  .images-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .images-container img {
+    height: auto;
+    min-height: 200px;
+  }
+}
+
+/* Tablets (768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-overview-container {
+    padding: 30px;
+  }
+
+  .part1 {
+    font-size: 2.2rem;
+  }
+
+  .part2 {
+    font-size: 1.1rem;
+  }
+
+  .hela-video {
+    height: clamp(300px, 55vh, 450px);
+    border-radius: 10px;
+  }
+
+  .hela-video2 {
+    height: clamp(220px, 40vh, 320px);
+    border-radius: 10px;
+  }
+
+  .intro-text {
+    width: 90%;
+    margin-right: 0;
+    font-size: 1rem;
+  }
+
+  .images-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .images-container img {
+    height: auto;
+    min-height: 250px;
+  }
+}
+
+/* Small Laptops (1025px to 1366px) */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+  .project-overview-container {
+    padding: 40px;
+  }
+
+  .hela-video {
+    height: clamp(400px, 60vh, 550px);
+    border-radius: 12px;
+    max-width: 1000px;
+  }
+
+  .hela-video2 {
+    height: clamp(300px, 45vh, 400px);
+    border-radius: 12px;
+    max-width: 800px;
+  }
+
+  .intro-text {
+    max-width: 80%;
+  }
+}
+
+/* Large Desktops (1367px and up) */
+@media screen and (min-width: 1367px) {
+  .project-overview-container {
+    padding: 50px;
+  }
+
+  .hela-video {
+    height: clamp(500px, 65vh, 600px);
+    border-radius: 15px;
+    max-width: 1200px;
+  }
+
+  .hela-video2 {
+    height: clamp(350px, 50vh, 450px);
+    border-radius: 15px;
+    max-width: 1000px;
+  }
+
+  .intro-text {
+    max-width: 70%;
+  }
+}
+
+/* Landscape Orientation Adjustments */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .hela-video {
+    height: clamp(120px, 80vh, 300px);
+  }
+
+  .hela-video2 {
+    height: clamp(100px, 70vh, 250px);
+  }
+}
+
+/* High DPI Displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi) {
+  .hela-video,
+  .hela-video2 {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}

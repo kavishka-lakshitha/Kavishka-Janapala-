@@ -1,0 +1,118 @@
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  color: #000;
+}
+
+.skills-title {
+  border: 2px solid #333;
+  display: inline-block;
+  padding: 15px 40px;
+  background: #fff;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 19px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 40pt;
+}
+
+.skills-category {
+  margin-bottom: 40px;
+  margin-top: 7%;
+  font-size: 5%;
+}
+
+.skills-category h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 650;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+  gap:5px;
+
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 5px; /* Reduced gap */
+  
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  gap: 2%;
+}
+
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-top: 10%;
+  gap: 20px;
+  
+}
+
+.skill-item span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 1px; /* smaller gap on mobile */
+  }
+
+  .skill-item img {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 4px;
+  }
+
+  .skill-item span {
+    font-size: 11px;
+  }
+}
+
+/* Mobile tweak: keep back button close to top but visible */
+@media (max-width: 480px) {
+  .top-back-button {
+    top: 8px; /* slightly higher on small screens */
+    left: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+/* Back button (shared) */
+.top-back-button {
+  position: absolute;
+  top: 3x; /* moved higher */
+  left: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #222;
+  background: rgba(255,255,255,0.95);
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  z-index: 50;
+}
+
+.back-icon {
+  margin-right: 8px;
+}

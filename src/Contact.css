@@ -1,0 +1,263 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Contact Container */
+.contact-container {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-title {
+   border: 2px solid #333;
+  display: inline-block;
+  padding: 15px 40px;
+  background: #fff;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 60pt;
+}
+
+.contact-description {
+ font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 5%;
+  font-weight: 600;
+}
+
+/* Divider */
+.contact-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  margin-top: -2%;
+}
+
+.divider-line {
+  width: 90px;
+  height: 1px;
+  background-color: #999;
+}
+
+
+
+.envelope-icon {
+  color: #666;
+}
+
+/* Form Container */
+.contact-form-container {
+  width: 100%;
+  margin-top: 5%;
+}
+
+.contact-form {
+  width: 100%;
+  margin-top: 5%;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 2rem;
+  margin-top: 5%;
+}
+
+/* Form Inputs */
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+  padding: 0.75rem 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #666;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-input:focus {
+  border-bottom-color: #555;
+}
+
+/* Textarea */
+.form-textarea {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #333;
+  padding: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.3s ease;
+}
+
+.form-textarea::placeholder {
+  color: #666;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-textarea:focus {
+  border-color: #555;
+}
+
+/* Submit Section */
+.form-submit {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.submit-btn {
+  background: transparent;
+  border: 2px solid #333;
+  color: #333;
+  padding: 0.75rem 2.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+  color: #e8e8e8;
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+}
+
+.submit-btn.loading {
+  background-color: #666;
+  color: #e8e8e8;
+  cursor: not-allowed;
+}
+
+.submit-btn.submitted {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  color: #2E7D32;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .contact-content {
+    max-width: 400px;
+  }
+  
+  .contact-title {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.5rem;
+  }
+  
+  .contact-description {
+    font-size: 0.85rem;
+    max-width: 350px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    font-size: 0.8rem;
+  }
+  
+  .submit-btn {
+    padding: 0.7rem 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 0.5rem;
+  }
+  
+  .contact-content {
+    max-width: 100%;
+  }
+  
+  .contact-title {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+  
+  .contact-description {
+    font-size: 0.8rem;
+    max-width: 300px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .divider-line {
+    width: 40px;
+  }
+}
